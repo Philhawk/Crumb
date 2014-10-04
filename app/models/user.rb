@@ -13,7 +13,7 @@
 class User < ActiveRecord::Base
 	# has_secure_password
 	has_many :mealplans
-	has_many :recipes, :through => :mealplans
+
 
 	# validates :name, :presence => true, :uniqueness => true, :length => {:minimum => 3}
 	# validates :email, :presence => true, :uniqueness => true
