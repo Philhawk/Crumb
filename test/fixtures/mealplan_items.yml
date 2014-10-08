@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: mealplan_items
+#
+#  id          :integer          not null, primary key
+#  mealplan_id :integer
+#  recipe_id   :integer
+#  order       :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mealplan_id: 1
+  recipe_id: 1
+  order: 1
+
+two:
+  mealplan_id: 1
+  recipe_id: 1
+  order: 1

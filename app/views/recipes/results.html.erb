@@ -1,0 +1,12 @@
+
+<h3>Recipes</h3>
+
+
+<h4>How about you dont eat for a change?</h4>
+
+
+<% @recipes.each do |r| %>
+	<p>Name: <%= r.name %></p> 
+	  <img src="<%= r.image %>"> </p> 
+
+<% end %> 

@@ -1,14 +1,33 @@
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crumb</title>
+  <title>Crumb..</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
 
+ 
+  
+<header>
+  <nav>
+   <a href="/"><img src="/assets/crumbly.jpeg"> </a>
+    <ul>
+    
+	      <%== intellinav %>
+    </ul>
+    </nav>
+  </header>
+
+
+<div class="container">
+	<%= yield %>
+</div>
 </body>
 </html>
+
+

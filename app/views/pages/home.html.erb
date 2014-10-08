@@ -1,0 +1,16 @@
+<h3>Crumbly is an intuituve calorie counter which provides recipes based on your own specific dietary needs.
+</h3>
+
+<% cuisines = ["American","Italian","Asian","Mexican","Southern & Soul Food","French","Southwestern","Barbecue","Indian","Chinese","Cajun & Creole","English","Mediterranean" "Greek","Spanish","German","Thai","Moroccan","Irish","Japanese","Cuban","Hawaain","Swedish","Hungarian","Portugese"] %>
+
+<%= form_tag '/results', :method => :get do %>
+	
+	<%= select_tag "cuisine", options_for_select(cuisines) %>
+	<%= text_field_tag 'caloricinput', nil, :placeholder => 'Max Calories' %>
+	<%= submit_tag 'Get Recipe!' %>
+
+<% end %>
+
+
+
+	

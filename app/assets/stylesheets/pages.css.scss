@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+}
+
+nav {
+	background-color: white;
+	color: white;
+	padding: 1em 0;
+	border:  1px solid navy;
+
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	font-family: 'Arial', cursive;
+	color: navy;
+
+}
+
+header img {    
+	display: inline-block;
+	height: 75px;
+    width: 160px;
+}
+
+header nav ul {
+	position: relative;
+	left: 600px;
+	vertical-align: top;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: right;
+	display: inline-block;
+	font-family: 'Pacifico', cursive;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 1em;
+	color: red;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	color: navy;
+}
+
+label {
+	display: inline-block;
+	min-width: 150px;
+	text-align: right;
+}
+
+.field_with_errors { 
+	display: inline-block;
+	min-width: 10px;
+	text-align: right;
+
+
+	input {
+		background-color: white;
+		border: 2px red solid;
+	}
+}
+
+div { 
+	margin-top: 10px;
+	
+}
+
+ol {
+	background-color: rgb(0, 255, 194);
+	padding: 1em;
+}
+
+#new_user {
+	margin: 2em;
+}
+
+.logo {
+display: inline-block
+}
+
+
+
+
