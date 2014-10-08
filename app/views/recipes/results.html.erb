@@ -3,8 +3,10 @@
 
 
 
-<% @recipes.each do |r| %>
+<% @recipes.reverse.each do |r| %>
 	<p>Name: <%= r.name %></p> 
 	  <img src="<%= r.image %>"> </p> 
 
 <% end %> 
+
+<%= link_to("Click for more", "#{yummly_path}?cuisine=#{params[:cuisine]}&caloricinput=#{@calories}", class: 'button') unless params[:action] == 'yummly' %>

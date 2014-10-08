@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   
   get '/results' => 'recipes#results'
 
+  get '/yummly' => 'recipes#yummly'
+
   end
 
 
