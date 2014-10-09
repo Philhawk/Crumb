@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get '/yummly' => 'recipes#yummly'
 
-  get '/recipes/:id' => 'recipes#show'
-   get '/recipes/:id/add' => 'recipes#add'
+  get '/recipes/:id' => 'recipes#show', :as => 'recipe'
+  get '/recipes/:id/add' => 'recipes#add'
 
 end

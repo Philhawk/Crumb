@@ -40,8 +40,10 @@ class RecipesController < ApplicationController
 	end
 
 	def add
+		redirect_to root_path unless @current_user
 		@recipe = Recipe.find(params[:id])
-		@current_user.recipes << @recipes
+		@current_user.mealplans.create unless @current_user.mealplans.length
+		@current_user.mealplans.first.recipes << @recipe
 		redirect_to user_path(@current_user)
 	end
 
