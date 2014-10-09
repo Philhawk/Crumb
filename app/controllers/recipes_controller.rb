@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
 		@dishes = HTTParty.get(url)
 		recipes = @dishes['matches']
 	 	recipes.each do |r|		
-			recipe = Recipe.new :ingredients => r['ingredients'].join(', '), :name => r['recipeName'], :preparationtime => r['totalTimeInSeconds'], :recipe_unique_id => r['id'], :image => r['smallImageUrls'].first.gsub('s90','s150'), :cuisine => params[:cuisine]
+			recipe = Recipe.new :ingredients => r['ingredients'].join(', '), :name => r['recipeName'], :preparationtime => r['totalTimeInSeconds'], :recipe_unique_id => r['id'], :image => r['smallImageUrls'].first.gsub('s90','s300'), :cuisine => params[:cuisine]
 			recipe.calories = params[:caloricinput] # XXX Haxx
 			recipe.save
 	 	end
