@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  Rails.application.routes.draw do
+
   root :to => 'pages#home'
   get '/users/edit' => 'users#edit', :as => :edit_user
   resources :users, :except => [:edit]
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get '/yummly' => 'recipes#yummly'
 
-  end
-
+  get '/recipes/:id' => 'recipes#show'
+   get '/recipes/:id/add' => 'recipes#add'
 
 end

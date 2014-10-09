@@ -1,5 +1,4 @@
-<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,22 +7,23 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
 
 
  
   
 <header>
+  
   <nav>
-   <a href="/"><img src="/assets/crumbly.jpeg"> </a>
+  <a href="/"><img src="assets/crumbly.jpeg"></a> 
     <ul>
-    
 	      <%== intellinav %>
     </ul>
-    </nav>
-  </header>
+  </nav>
+  
+</header>
 
-
+<body>
 <div class="container">
 	<%= yield %>
 </div>

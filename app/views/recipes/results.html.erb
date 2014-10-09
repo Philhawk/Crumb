@@ -4,8 +4,15 @@
 
 
 <% @recipes.reverse.each do |r| %>
-	<p>Name: <%= r.name %></p> 
-	  <img src="<%= r.image %>"> </p> 
+
+	
+     <p>
+     	<%= image_tag r.image %>
+     	<a href="/recipes/<%= r.id %>">
+	    <%= r.name %></a> 
+	</p>
+
+	
 
 <% end %> 
 

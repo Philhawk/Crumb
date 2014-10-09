@@ -1,10 +1,11 @@
 body {
 	margin: 0;
+	
+	background-repeat: no-repeat;
 }
 
 nav {
-	background-color: white;
-	color: white;
+	color: navy;
 	padding: 1em 0;
 	border:  1px solid navy;
 
@@ -13,8 +14,9 @@ nav {
 .container {
 	max-width: 960px;
 	margin: auto;
-	font-family: 'Arial', cursive;
+	font-family: 'Arial';
 	color: navy;
+
 
 }
 
@@ -25,7 +27,7 @@ header img {
 }
 
 header nav ul {
-	position: relative;
+	
 	left: 600px;
 	vertical-align: top;
 }
@@ -35,7 +37,10 @@ nav ul {
 	padding: 0;
 	margin: right;
 	display: inline-block;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Raleway', sans-serif;
+
+
+
 }
 
 nav li {
@@ -45,7 +50,6 @@ nav li {
 }
 
 nav a {
-	color: white;
 	text-decoration: none;
 	color: navy;
 }
@@ -83,9 +87,9 @@ ol {
 }
 
 .logo {
-display: inline-block
+display: inline-block;
 }
 
-
-
-
+a:link {
+	font-size: 150%;
+}

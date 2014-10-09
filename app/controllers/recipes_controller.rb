@@ -26,11 +26,21 @@ class RecipesController < ApplicationController
 		@dishes = HTTParty.get(url)
 		recipes = @dishes['matches']
 	 	recipes.each do |r|		
-			recipe = Recipe.new :ingredients => r['ingredients'].join(', '), :name => r['recipeName'], :preparationtime => r['totalTimeInSeconds'], :recipe_unique_id => r['id'], :image => r['hostedMediumUrl'], :cuisine => params[:cuisine]
+			recipe = Recipe.new :ingredients => r['ingredients'].join(', '), :name => r['recipeName'], :preparationtime => r['totalTimeInSeconds'], :recipe_unique_id => r['id'], :image => r['smallImageUrls'].first.gsub('s90','s150'), :cuisine => params[:cuisine]
 			recipe.calories = params[:caloricinput] # XXX Haxx
 			recipe.save
 	 	end
 	 	@recipes = Recipe.where(:cuisine => params[:cuisine]).where("calories <= ?", params[:caloricinput])
 	 	render :results
+
 	end
+
+	def show
+		@recipe = Recipe.find(params[:id])
+	end
+
+	def add
+		@recipe = Recipe.find(params[:id])
+	end
+	
 end
