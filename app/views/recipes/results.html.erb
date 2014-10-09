@@ -1,19 +1,11 @@
-
 <h3>Recipes</h3>
 
 
-
-<% @recipes.reverse.each do |r| %>
-
-	
-     <p>
-     	<%= image_tag r.image %>
-     	<a href="/recipes/<%= r.id %>">
-	    <%= r.name %></a> 
-	</p>
-
-	
-
-<% end %> 
-
-<%= link_to("Click for more", "#{yummly_path}?cuisine=#{params[:cuisine]}&caloricinput=#{@calories}", class: 'button') unless params[:action] == 'yummly' %>
+<ul class="recipes">
+  <% @recipes.each do |recipe| %>
+    <li style="background-image:url(<%= recipe.image %>);">
+      <a href="/recipes/<%= recipe.id %>">
+        <%= recipe.name %>
+      </a>
+    </li>
+  <% end %>

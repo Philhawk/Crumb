@@ -1,14 +1,8 @@
 
 
-	<% @recipes.each do |recipe| %>
+<p><%= image_tag @recipe.image %></p>
+<p> Ingredients: <%= @recipe.ingredients %></p> 
 
-		<a href="/recipes/<%= recipes.id %>"><%= recipes.name %></a><br>
-	
-		<p> Ingredients: <%= r.ingredients %></p> 
 
-  <% end %>
-
-  <section>
-    <a href="/recipes/<%= @recipes.id %>/Add">Add to Cookbook</a>
-  </section>
-</div>
+<%= link_to("Add to Cookbook", add_recipe_path(@recipe)) %>
+  

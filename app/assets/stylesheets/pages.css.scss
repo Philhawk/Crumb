@@ -93,3 +93,40 @@ display: inline-block;
 a:link {
 	font-size: 150%;
 }
+
+ul.recipes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipes img {
+  max-height: 200px;
+  display: block;
+  margin: auto;
+}
+
+.recipes li {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border: 1px solid black;
+  text-align: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.recipes li a {
+  background-color: white;
+  padding: 0.2em 1em;
+  border-radius: 1em;
+
+}
+
+.recipe img {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 20px #000;
+  border-radius: 5px;
+}

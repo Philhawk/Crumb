@@ -41,6 +41,8 @@ class RecipesController < ApplicationController
 
 	def add
 		@recipe = Recipe.find(params[:id])
+		@current_user.recipes << @recipes
+		redirect_to user_path(@current_user)
 	end
-	
+
 end
