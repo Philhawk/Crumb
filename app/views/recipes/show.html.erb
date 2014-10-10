@@ -8,11 +8,10 @@
 	<p> Ingredients: <%= @recipe.ingredients %></p> 
 
 
-
+	<%  if @current_user.present?%>
 	  <section>
 	    <a href="/recipes/<%= @recipe.id %>/add">Add to Cookbook</a>
-	    
-	  </section>
-
+	    </section>
+	<% end %>
  
 </div>
