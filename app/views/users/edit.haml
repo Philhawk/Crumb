@@ -2,6 +2,12 @@
 	Editing
 	= @user.name
 
+= image_tag @user.avatar
+
+%p
+
+	User since:
+	=@user.created_at.strftime '%A %B %m %Y'
 
 = form_for @user do |f|
 	%div

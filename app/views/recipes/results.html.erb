@@ -1,5 +1,4 @@
-<h3>Recipes</h3>
-
+<div class="recipesshow">
 
 <ul class="recipes">
   <% @recipes.each do |recipe| %>
@@ -7,3 +6,5 @@
 	<div class="copy"><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></div></li>
   <% end %>
 </ul>
+
+</div>

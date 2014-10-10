@@ -1,24 +1,44 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
+
+
 body {
 	margin: 0;
-	
-	background-repeat: no-repeat;
+
+	z-index: -1;
+
+	background-image: url('Spices.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+
+
 }
 
 
 nav {
 	color: navy;
-	padding: 1em 0;
+	padding: 0.1em 0;
 	border:  1px solid navy;
-
+	background-color: white;
+	z-index: 0;
 }
 
 .container {
 	max-width: 960px;
+	min-height: 100vh;
 	margin: auto;
 	font-family: 'Arial';
+	font-size: 300%;
 	color: navy;
+	border: 2em;
+	
+	background-color: white;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	
 
 
 }
@@ -33,6 +53,7 @@ header nav ul {
 	
 	left: 600px;
 	vertical-align: top;
+	margin-top: 26px;
 }
 
 nav ul {
@@ -94,7 +115,7 @@ display: inline-block;
 }
 
 a:link {
-	font-size: 150%;
+	font-size: 100%;
 }
 
 .recipes {
@@ -156,4 +177,43 @@ a:link {
   margin: auto;
   box-shadow: 5px 5px 20px #000;
   border-radius: 5px;
+}
+
+.wrapper {
+	width: 100%;
+	top-margin: 0;
+	top-padding: 0;
+	margin: 0;
+}
+
+.wrapper .container {
+	background: none;
+	margin: none;
+}
+
+.wrapper h1 {
+	color: white;
+	background: none;
+	text-align: center;
+}
+
+select, input, input[type=submit] {
+	font-size: 60%;
+	
+}
+
+.showpage {
+	border: 1em;
+	background-color: rgba(255,255,255,0.5);
+	font-size: 80%;
+}
+
+.recipesshow {  
+	font-size: 60%;
+}
+
+
+.showpage p {
+	color: black;
+	text-align: center;
 }
