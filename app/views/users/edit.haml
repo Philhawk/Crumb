@@ -1,27 +1,29 @@
-%h2
-	Editing
-	= @user.name
+%div.signup
 
-= image_tag @user.avatar
+	%h2
+		Editing
+		= @user.name
 
-%p
+	= image_tag @user.avatar
 
-	User since:
-	=@user.created_at.strftime '%A %B %m %Y'
+	%p
 
-= form_for @user do |f|
-	%div
-		= f.label :name
-		= f.text_field :name
+		User since:
+		=@user.created_at.strftime '%A %B %m %Y'
 
-	%div
-		= f.label :email
-		= f.email_field :email
+	= form_for @user do |f|
+		%div
+			= f.label :name
+			= f.text_field :name
 
-	%div
-		= f.label :avatar
-		= f.url_field :avatar
+		%div
+			= f.label :email
+			= f.email_field :email
 
-	%div
-		<label></label>
-		= f.submit
+		%div
+			= f.label :avatar
+			= f.url_field :avatar
+
+		%div
+			<label></label>
+			= f.submit

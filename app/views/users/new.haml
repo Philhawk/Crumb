@@ -1,7 +1,12 @@
+
+
 - if @user.errors.any?
 	%ol
 		- @user.errors.full_messages.each do |msg|
 			%ul= msg
+
+
+<div class="signup">
 
 = form_for @user do |f|
 
@@ -25,3 +30,5 @@
 	%div
 		%label
 		= f.submit
+
+</div>

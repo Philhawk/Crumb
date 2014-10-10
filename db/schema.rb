@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20141007064104) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
-    t.text     "avatar",          default: "https://pbs.twimg.com/profile_images/378800000186293328/5a2b472f4b58080a1f45ca9884cf03d9.jpeg"
+    t.text     "avatar",          default: "http://www.zaarly.com/assets/hammer/session/blank-avatar.jpg"
   end
 
 end

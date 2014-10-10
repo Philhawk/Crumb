@@ -7,7 +7,7 @@
 	
 	<%= select_tag "cuisine", options_for_select(cuisines) %>
 	<%= text_field_tag 'caloricinput', nil, :placeholder => 'Max Calories' %>
-	<%= submit_tag 'Get Recipe!' %>
+	<%= submit_tag 'Get Recipe!', :id => 'getrecipe' %>
 
 <% end %>
 

@@ -2,7 +2,9 @@
 
 	<p><%= image_tag @recipe.image %></p>
 	<p>  <%= @recipe.name %></p> 
-	<p> Preparation time: <%= @recipe.preparationtime/60 %> minutes</p> 
+	<% if @recipe.preparationtime.present?  %>
+		<p> Preparation time: <%= @recipe.preparationtime/60 %> minutes</p> 
+	<% end %>
 	<p> Ingredients: <%= @recipe.ingredients %></p> 
 
 

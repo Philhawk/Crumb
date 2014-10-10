@@ -8,7 +8,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  password_digest :string(255)
-#  avatar          :text             default("https://pbs.twimg.com/profile_images/378800000186293328/5a2b472f4b58080a1f45ca9884cf03d9.jpeg")
+#  avatar          :text             default("http://www.zaarly.com/assets/hammer/session/blank-avatar.jpg")
 #
 
 class User < ActiveRecord::Base

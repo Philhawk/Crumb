@@ -104,6 +104,7 @@ div {
 ol {
 	background-color: rgb(0, 255, 194);
 	padding: 1em;
+	font-size: 40%
 }
 
 #new_user {
@@ -216,4 +217,30 @@ select, input, input[type=submit] {
 .showpage p {
 	color: black;
 	text-align: center;
+}
+
+.signup {
+	padding: 0.5em;
+	border: 1em;
+	background-color: rgba(255,255,255,0.5);
+	font-size: 54%;
+}
+
+.signup label {
+	width: 30px;
+}
+
+#getrecipe {
+	font-size: 60%;
+	padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container img {
+	padding-top: 1em;
 }

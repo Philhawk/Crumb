@@ -1,16 +1,20 @@
+
 - if @error
-	= @error
+	%ol
+		= @error
 
-= form_tag '/login' do
+%div.signup
 
-	%div
-		= label_tag :username
-		= text_field_tag :username, nil, :autofocus => true
-	
-	%div
-		= label_tag :password
-		= password_field_tag :password
+	= form_tag '/login' do
 
-	%div
-		%label
-		= submit_tag 'Login'
+		%div
+			= label_tag :username
+			= text_field_tag :username, nil, :autofocus => true
+		
+		%div
+			= label_tag :password
+			= password_field_tag :password
+
+		%div
+			%label
+			= submit_tag 'Login'

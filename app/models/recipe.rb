@@ -7,7 +7,7 @@
 #  recipe_unique_id :string(255)
 #  cuisine          :string(255)
 #  calories         :integer
-#  ingredients      :string(255)
+#  ingredients      :text
 #  preparationtime  :integer
 #  image            :text
 #  created_at       :datetime
